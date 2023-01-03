@@ -86,4 +86,8 @@ select:hover,
 select:focus,
 select:active {
   outline: none !important;
+}
+
+.home {
+  background-color: #0b0b0b;
 }/*# sourceMappingURL=netflix.css.map */
