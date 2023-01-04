@@ -1,0 +1,60 @@
+nav{
+    padding-right: 32px;
+    padding-left: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    
+    .nav-wrapper{
+        display: flex;
+        align-items: center;
+        .nav-left{
+            display: flex;
+            flex: 1;
+        }
+        .nav-right{
+            margin-left: 13px;
+            flex: 11;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .menu{
+                display: flex;
+                align-items: center;
+                gap:16px;
+                
+                li{
+                    a{
+                        @include getProperFont(14px, 400, 20px);
+                        text-decoration: none;
+                        color: $main-text-color;
+                        &.active{
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+            .profile{
+                display: flex;
+                align-items: center;
+                gap:24px;
+                .search{
+                    cursor: pointer;
+                    img{
+                        width: 18px;
+                        height: 18px;
+                        object-fit: cover;
+                    }
+                }
+                .profile-img{
+                    cursor: pointer;
+                    img{
+                        width: 26px;
+                        height: 26px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+    
+}

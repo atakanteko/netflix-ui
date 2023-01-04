@@ -1,0 +1,5 @@
+@mixin getProperFont($size, $weight, $lineheight) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lineheight;
+  }
