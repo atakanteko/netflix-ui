@@ -3,7 +3,12 @@ nav{
     padding-left: 20px;
     padding-top: 14px;
     padding-bottom: 14px;
-    
+    position: fixed;
+    width: 100%;
+    background-color: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
+    &.bg{
+        background-color: $main-bg-color;
+    }
     .nav-wrapper{
         display: flex;
         align-items: center;

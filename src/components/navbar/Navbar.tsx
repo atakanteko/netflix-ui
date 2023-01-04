@@ -1,12 +1,15 @@
 import siteLogo from '@/assets/images/siteLogo.svg';
 import search from '@/assets/images/search.svg';
 import profilePhoto from '@/assets/images/profilePhoto.png';
+import useScrolled from '@/hooks/useScrolled';
 
 type Props = {}
 
 const Navbar = (props: Props) => {
+  const isScrolled = useScrolled();
+
   return (
-    <nav>
+    <nav className={`${isScrolled ? "bg" : ""}`}>
         <div className="nav-wrapper">
           <div className="nav-left">
               <img src={siteLogo} alt="logo" />

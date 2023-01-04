@@ -93,6 +93,12 @@ nav {
   padding-left: 20px;
   padding-top: 14px;
   padding-bottom: 14px;
+  position: fixed;
+  width: 100%;
+  background-color: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.3) 50%);
+}
+nav.bg {
+  background-color: #0b0b0b;
 }
 nav .nav-wrapper {
   display: flex;
@@ -150,4 +156,13 @@ nav .nav-wrapper .nav-right .profile .profile-img img {
 
 .home {
   background-color: #0b0b0b;
+  position: relative;
+  z-index: 10;
+}
+.home .bg-movie {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }/*# sourceMappingURL=netflix.css.map */
