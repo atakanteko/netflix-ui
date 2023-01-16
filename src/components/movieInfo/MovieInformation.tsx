@@ -1,14 +1,24 @@
 import playIcon from '@/assets/images/playIcon.svg';
 import { IMovie } from '@/ts/interfaces/IMovie';
+import { motion } from 'framer-motion';
 
 
 
 const MovieInformation = (props: IMovie) => {
-    console.log(props);
     const { genres, name, year, director, seasons, desc, image } = props;
-    
+
     return (
-        <div className='movie-information'>
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.6 }}
+            transition={{ duration: 2, ease: "easeOut", }}
+            variants ={{
+            hidden: { opacity: 0, x: 0 },
+            visible: { opacity: 1, x: 0 }
+            }}
+            className='movie-information'
+        >
             <img 
             src={image} 
             alt=""
@@ -49,7 +59,7 @@ const MovieInformation = (props: IMovie) => {
                     </button>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

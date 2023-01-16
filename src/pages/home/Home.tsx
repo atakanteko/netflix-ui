@@ -21,7 +21,6 @@ const Home = (props: Props) => {
     <div className="home">
         <Navbar />
         <MovieInformation {...movieModel}/>
-     
     </div>
   )
 }
